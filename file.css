@@ -2,7 +2,7 @@
 	max-height : 35%;
 	max-width : 35%;
 }
-.background{
+body{
 	background-color: #ADD8E6;
 }
 
@@ -14,7 +14,7 @@
 	
 }
 
-.table{
+table{
 	background-color: #FFDEAD;
 	margin: auto;
 	border-color: #FFD700;
@@ -27,7 +27,7 @@
 	text-decoration : underline;
 }
 
-.saluti{
+address{
 	text-align: right;
 	color : #0000CD;
 }
