@@ -4,6 +4,9 @@
 	<head>
 		<title> MONUMENTI ITALIANI </title>
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link href="bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap-grid.css" type="text/css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap-reboot.css" type="text/css" rel="stylesheet">
 		<link href="file.css" type="text/css" rel="stylesheet">
 	</head>	 
 	
@@ -19,107 +22,98 @@
 		<div>
 			<h3 class= "subtitle">Galleria Immagini:</h3>
 			<p align = "center">Ecco le immagini dei monumenti italiani più famosi</p>
-			<!--Carousel Wrapper-->
-			<div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2"  data-ride="carousel">
-
-				<!--Controls-->
-				<div class="controls-top">
-					<a class="black-text" href="#multi-item-example" data-slide="prev"><i class="fas fa-angle-left fa-3x pr-3"></i></a>
-					<a class="black-text" href="#multi-item-example" data-slide="next"><i class="fas fa-angle-right fa-3x pl-3"></i></a>
-				</div>
-				<!--/.Controls-->
-			
-				<!--Slides-->
-				<div class="carousel-inner" role="listbox">
-			
-					<!--First slide-->
-					<div class="carousel-item active">
-						<div class="col-md-3 mb-3">
-							<div class="card">
-								<img class="img-fluid" src="images/colosseo.jpeg" alt="Card image cap">
-							</div>
-						</div>
-			
-						<div class="col-md-3 mb-3">
-							<div class="card">
-								<img class="img-fluid" src="images/basilica_san_pietro.jpg" alt="Card image cap">
-							</div>
-						</div>
-			
-						<div class="col-md-3 mb-3">
-							<div class="card">
-								<img class="img-fluid" src="images/fontana_trevi.jpg" alt="Card image cap">
-							</div>
-						</div>
-			
-						<div class="col-md-3 mb-3">
-							<div class="card">
-								<img class="img-fluid" src="images/torre_di_pisa.jpg" alt="Card image cap">
-							</div>
-						</div>
-			
-					</div>
-					<!--/.First slide-->
-			
-					<!--Second slide-->
-					<div class="carousel-item">
-			
-						<div class="col-md-3 mb-3">
-							<div class="card">
-								<img class="img-fluid" src="images/duomo_milano.jpg" alt="Card image cap">
-							</div>
-						</div>
-				
-						<div class="col-md-3 mb-3">
-							<div class="card">
-								<img class="img-fluid" src="images/san_marco.jpg" alt="Card image cap">
-							</div>
-						</div>
-				
-						<div class="col-md-3 mb-3">
-							<div class="card">
-								<img class="img-fluid" src="images/pantheon.jpg" alt="Card image cap">
-							</div>
-						</div>
-				
-						<div class="col-md-3 mb-3">
-							<div class="card">
-								<img class="img-fluid" src="images/santa_maria_del_fiore.jpg" alt="Card image cap">
-							</div>
-						</div>
-				
-					</div>
-					<!--/.Second slide-->
-			
-					<!--Third slide-->
-					<div class="carousel-item">
-			
-						<div class="col-md-3 mb-3">
-							<div class="card">
-								<img class="img-fluid" src="images/duomo_firenze.jpg" alt="Card image cap">
-							</div>
-						</div>
-			
-						<div class="col-md-3 mb-3">
-							<div class="card">
-								<img class="img-fluid" src="images/bosco_capodimonte.jpg" alt="Card image cap">
-							</div>
-						</div>
-			
-					</div>
-					<!--/.Third slide--> 
+			<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+				  	<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+				  	<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="7"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="8"></li>
+					<li data-target="#carouselExampleCaptions" data-slide-to="9"></li>
 					
-				</div>
-				<!--/.Slides-->
-			
-			</div>
-			<!--/.Carousel Wrapper-->
+					  
+				</ol>
+				<div class="carousel-inner">
+				  	<div class="carousel-item active">
+						<img src="images/colosseo.jpeg" class="d-block w-100 images_g" alt="Foto Colosseo">
+						<div class="carousel-caption d-none d-md-block">
+					 		<h3 class="color_gallery">#1<br>Colosseo</h3>
+						</div>
+				  	</div>
+					<div class="carousel-item">
+						<img src="images/basilica_san_pietro.jpg" class="d-block w-100 images_g" alt="Foto Basilica di San Pietro">
+						<div class="carousel-caption d-none d-md-block">
+							<h3 class="color_gallery">#2<br>Basilica di San Pietro</h3>
+						</div>
+				 	</div>
+				  	<div class="carousel-item">
+						<img src="images/fontana_trevi.jpg" class="d-block w-100 images_g" alt="Foto Fontana di Trevi">
+						<div class="carousel-caption d-none d-md-block">
+							<h3 class="color_gallery">#3<br>Fontana di Trevi</h3>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="images/torre_di_pisa.jpg" class="d-block w-100 images_g" alt="Foto Torre di Pisa">
+						<div class="carousel-caption d-none d-md-block">
+							<h3 class="color_gallery">#4<br>Torre di Pisa</h3>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="images/duomo_milano.jpg" class="d-block w-100 images_g" alt="Foto Duomo di Milano">
+						<div class="carousel-caption d-none d-md-block">
+							<h3 class="color_gallery">#5<br>Duomo di Milano</h3>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="images/san_marco.jpg" class="d-block w-100 images_g" alt="Foto Basilica di San Marco">
+						<div class="carousel-caption d-none d-md-block">
+							<h3 class="color_gallery">#6<br>Basilica di San Marco</h3>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="images/pantheon.jpg" class="d-block w-100 images_g" alt="Foto Pantheon">
+						<div class="carousel-caption d-none d-md-block">
+							<h3 class="color_gallery">#7<br>Pantheon</h3>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="images/santa_maria_del_fiore.jpg" class="d-block w-100 images_g" alt="Foto Piazza del Duomo di Firenze">
+						<div class="carousel-caption d-none d-md-block">
+							<h3 class="color_gallery">#8<br>Piazza del Duomo di Firenze</h3>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="images/duomo_firenze.jpg" class="d-block w-100 images_g" alt="Foto Cattedrale di Santa Maria del Fiore">
+						<div class="carousel-caption d-none d-md-block">
+					 		<<h3 class="color_gallery">#9<br>Cattedrale di Santa Maria del Fiore</h3>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="images/bosco_capodimonte.jpg" class="d-block w-100 images_g" alt="Foto Bosco di Capodimonte">
+						<div class="carousel-caption d-none d-md-block">
+							<h3 class="color_gallery">#10<br>Bosco di Capodimonte</h3>
+						</div>
+					</div>
+	
+				<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+				  	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  	<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+				  	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  	<span class="sr-only">Next</span>
+				</a>
+			  </div>
 		</div>
 		<div> 
 			<h3 class = "subtitle"> Classifica: </h3>
 			<ol type = "I">
 				<li> 
-					<h3> Colosseo: </h3> 
+					<h3 id = "colosseo"> Colosseo: </h3> 
 					<div class="col-md-4">
 						<div class="div_a">
 						 	<img class = "images_a" src = "images/colosseo.jpeg" alt = "Foto Colosseo">
@@ -127,8 +121,8 @@
 							  	<p class="card-text">Colosseo<small>: simbolo di Roma, nonchè dell'Italia.</small></p>
 							  	<div class="d-flex justify-content-between align-items-center">
 								 	<div class="btn-group">
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = https://it.wikipedia.org/wiki/Colosseo target = "_blank">Maggiori informazioni</a></button>
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a> </button>
+									  	<button type="button" class="btn btn-dark"><a href = https://it.wikipedia.org/wiki/Colosseo target = "_blank">Maggiori informazioni</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a> </button>
 								  	</div>
 							 	</div>
 						  	</div>
@@ -136,16 +130,16 @@
 				  	</div>
 				</li>
 				<li> 
-					<h3> Basilica di San Pietro: </h3> 
+					<h3 id ="san_pietro"> Basilica di San Pietro: </h3> 
 					<div class="col-md-4">
 						<div class="div_a">
-						  	<img class = "images_a" src = "images/basilica_san_pietro.jpg" alt = "Foto Basilica di San Pietro">
+						  	<img class = "images_a" src = "images/basilica_san_pietro.jpg" alt = "Foto Basilica di San Pietro" > 
 						 	<div class="card-body">
 							  	<p class="card-text">Basilica di San Pietro<small>: luogo di riferimento per tutti i cristiano del mondo.</small></p>
 							  	<div class="d-flex justify-content-between align-items-center">
 								  	<div class="btn-group">
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = https://it.wikipedia.org/wiki/Basilica_di_San_Pietro_in_Vaticano target = "_blank">Maggiori informazioni</a></button>
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = https://it.wikipedia.org/wiki/Basilica_di_San_Pietro_in_Vaticano target = "_blank">Maggiori informazioni</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
 								  	</div>
 							  	</div>
 						  	</div>
@@ -153,16 +147,16 @@
 				  	</div>
 				</li>
 				<li> 
-					<h3> Fontana di Trevi: </h3> 
+					<h3 id = "fontana_trevi"> Fontana di Trevi: </h3> 
 					<div class="col-md-4">
 						<div class="div_a">
-						  	<img class = "images_a" src = "images/fontana_trevi.jpg" alt = "Foto Fontana di Trevi">
+						  	<img class = "images_a" src = "images/fontana_trevi.jpg" alt = "Foto Fontana di Trevi" >
 						 	<div class="card-body">
 							  	<p class="card-text">Fontana di Trevi<small>: grandissima fontana di Roma, dove la gente è solita lanciare monetine come buon auspicio.</small></p>
 							  	<div class="d-flex justify-content-between align-items-center">
 								  	<div class="btn-group">
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = https://it.wikipedia.org/wiki/Fontana_di_Trevi target = "_blank">Maggiori informazioni</a></button>
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = https://it.wikipedia.org/wiki/Fontana_di_Trevi target = "_blank">Maggiori informazioni</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
 								  	</div>
 							  	</div>
 						  	</div>
@@ -170,7 +164,7 @@
 				  	</div>
 				</li>
 				<li>
-					<h3> Torre di Pisa: </h3> 
+					<h3  id = "torre_pisa"> Torre di Pisa: </h3> 
 					<div class="col-md-4">
 						<div class="div_a">
 						  	<img class = "images_a" src = "images/torre_di_pisa.jpg" alt = "Foto Torre di Pisa">
@@ -178,8 +172,8 @@
 							  	<p class="card-text">Torre di Pisa<small>: conosciuta in tutto il mondo per il suo particolare, la sua inclinazione.</small></p>
 							  	<div class="d-flex justify-content-between align-items-center">
 								  	<div class="btn-group">
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = https://it.wikipedia.org/wiki/Torre_di_Pisa target = "_blank">Maggiori informazioni</a></button>
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = https://it.wikipedia.org/wiki/Torre_di_Pisa target = "_blank">Maggiori informazioni</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
 								  	</div>
 							  	</div>
 						  	</div>
@@ -187,16 +181,16 @@
 				  	</div>
 				</li>
 				<li>
-					<h3>Duomo di Milano: </h3> 
+					<h3 id = "duomo_milano">Duomo di Milano: </h3> 
 					<div class="col-md-4">
 						<div class="div_a">
-						  	<img class = "images_a" src = "images/duomo_milano.jpg" alt = "Foto Duomo di Milano">
+						  	<img class = "images_a" src = "images/duomo_milano.jpg" alt = "Foto Duomo di Milano" >
 						 	<div class="card-body">
 							  	<p class="card-text">Duomo di Milano<small>: simbolo della città da cui prende il nome.</small></p>
 							  	<div class="d-flex justify-content-between align-items-center">
 								  	<div class="btn-group">
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = https://it.wikipedia.org/wiki/Duomo_di_Milano target = "_blank">Maggiori informazioni</a></button>
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = https://it.wikipedia.org/wiki/Duomo_di_Milano target = "_blank">Maggiori informazioni</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
 								  	</div>
 							  	</div>
 						  	</div>
@@ -204,16 +198,16 @@
 				  	</div>
 				</li>
 				<li>
-					<h3> Basilica di San Marco: </h3> 
+					<h3 id ="san_marco"> Basilica di San Marco: </h3> 
 					<div class="col-md-4">
 						<div class="div_a">
-						  	<img class = "images_a" src = "images/san_marco.jpg" alt = "Foto Basilica di San Marco">
+						  	<img class = "images_a" src = "images/san_marco.jpg" alt = "Foto Basilica di San Marco" >
 						 	<div class="card-body">
 							  	<p class="card-text">Basilica di San Marco<small>: spicca con le sue cupole nell'omonima piazza della città di Venezia.<</small>/p>
 							  	<div class="d-flex justify-content-between align-items-center">
 								  	<div class="btn-group">
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = https://it.wikipedia.org/wiki/Basilica_di_San_Marco target = "_blank">Maggiori informazioni</a></button>
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = https://it.wikipedia.org/wiki/Basilica_di_San_Marco target = "_blank">Maggiori informazioni</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
 								  	</div>
 							  	</div>
 						  	</div>
@@ -221,32 +215,33 @@
 				  	</div>
 				</li>
 				<li>
-					<h3> Pantheon: </h3> 
+					<h3 id ="pantheon"> Pantheon: </h3> 
 					<div class="col-md-4">
 						<div class="div_a">
-						  	<img class = "images_a" src = "images/pantheon.jpg" alt = "Foto Pantheon">
+						  	<img class = "images_a" src = "images/pantheon.jpg" alt = "Foto Pantheon" >
 						 	<div class="card-body">
 							  	<p class="card-text">Pantheon<small>: chiesa di Roma costruita dagli antichi Romani, famosa per la cupola.</small></p>
 							  	<div class="d-flex justify-content-between align-items-center">
 								  	<div class="btn-group">
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = https://it.wikipedia.org/wiki/pantheon target = "_blank">Maggiori informazioni</a></button>
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = https://it.wikipedia.org/wiki/pantheon target = "_blank">Maggiori informazioni</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
 								  	</div>
 							  	</div>
 						  	</div>
 					 	</div>
 				  	</div>
 				</li>
-				<li><h3>Piazza del Duomo di Firenze: </h3> 
+				<li>
+					<h3 id ="piazza_duomo">Piazza del Duomo di Firenze: </h3> 
 					<div class="col-md-4">
 						<div class="div_a">
-						  	<img class = "images_a" src = "images/santa_maria_del_fiore.jpg" alt = "Foto Piazza del Duomo Firenze">
+						  	<img class = "images_a" src = "images/santa_maria_del_fiore.jpg" alt = "Foto Piazza del Duomo Firenze" >
 						 	<div class="card-body">
 							  	<p class="card-text">Piazza del Duomo di Firenze<small>: bellissima piazza nel centro di Firenze.</small></p>
 							  	<div class="d-flex justify-content-between align-items-center">
 								  	<div class="btn-group">
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = https://it.wikipedia.org/wiki/Piazza_del_Duomo_(Firenze) target = "_blank">Maggiori informazioni</a></button>
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = https://it.wikipedia.org/wiki/Piazza_del_Duomo_(Firenze) target = "_blank">Maggiori informazioni</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
 								  	</div>
 							  	</div>
 						  	</div>
@@ -254,16 +249,16 @@
 				  	</div>
 				</li>
 				<li>
-					<h3> Cattedrale di Santa Maria del Fiore: </h3> 
+					<h3 id ="santa_maria_del_fiore"> Cattedrale di Santa Maria del Fiore: </h3> 
 					<div class="col-md-4">
 						<div class="div_a">
-						  	<img class = "images_a" src = "images/duomo_firenze.jpg" alt = "Foto Cattedrale di Santya Maria del Fiore">
+						  	<img class = "images_a" src = "images/duomo_firenze.jpg" alt = "Foto Cattedrale di Santya Maria del Fiore" >
 						 	<div class="card-body">
 							  	<p class="card-text">Cattedrale di Santa Maria del Fiore<small>: Duomo di Firenze, splendido grazie all'uso di marmi policromi.</small></p>
 							  	<div class="d-flex justify-content-between align-items-center">
 								  	<div class="btn-group">
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = https://it.wikipedia.org/wiki/Cattedrale_di_Santa_Maria_del_Fiore target = "_blank">Maggiori informazioni</a></button>
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = https://it.wikipedia.org/wiki/Cattedrale_di_Santa_Maria_del_Fiore target = "_blank">Maggiori informazioni</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
 								  	</div>
 							  	</div>
 						  	</div>
@@ -271,16 +266,16 @@
 				  	</div>
 				</li>
 				<li>
-					<h3> Bosco di Capodimonte: </h3> 
+					<h3 id = "bosco_capodimonte"> Bosco di Capodimonte: </h3> 
 					<div class="col-md-4">
 						<div class="div_a">
-						  	<img class = "images_a" src = "images/bosco_capodimonte.jpg" alt = "Foto Bosco di Capodimonte">
+						  	<img class = "images_a" src = "images/bosco_capodimonte.jpg" alt = "Foto Bosco di Capodimonte" >
 						 	<div class="card-body">
 							  	<p class="card-text">Bosco di Capodimonte<small>: grandissima zona verde nella città di Napoli.</small></p>
 							  	<div class="d-flex justify-content-between align-items-center">
 								  	<div class="btn-group">
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = https://it.wikipedia.org/wiki/Parco_di_Capodimonte target = "_blank">Maggiori informzaioni</a></button>
-									  	<button type="button" class="btn btn-sm btn-outline-secondary"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = https://it.wikipedia.org/wiki/Parco_di_Capodimonte target = "_blank">Maggiori informzaioni</a></button>
+									  	<button type="button" class="btn btn-dark"><a href = "#tabella_riassuntiva">Tabella Riassuntiva</a></button>
 								  	</div>
 							  	</div>
 						  	</div>
@@ -345,7 +340,57 @@
 				</li>
 				<li>
 					<p>Vuoi sapere i monumenti più vicini a te? Guarda dove si trovano qui sotto!</p>
-
+					<div class="accordion" id="accordionExample">
+						<div class="card">
+						  	<div class="card-header" id="headingOne">
+								<h2 class="mb-0">
+							  		<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Nord Italia</button>
+								</h2>
+						 	</div>
+					  
+						  	<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div class="card-body">
+									<ul type ="square">
+									 	<li><a href = "#duomo_milano">Duomo di Milano</a></li>
+									 	<li><a href = "#san_marco">Basilica di San Marco</a></li>
+									</ul>
+						  	</div>
+						</div>
+						<div class="card">
+						  	<div class="card-header" id="headingTwo">
+								<h2 class="mb-0">
+							  		<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Centro Italia</button>
+								</h2>
+						  	</div>
+						  	<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+								<div class="card-body">
+									<ul type = "square">
+										<li><a href = "#torre_pisa">Torre di Pisa</a></li>
+										<li><a href = "#piazza_duomo">Piazza del Duomo</a></li>
+										<li><a href = "#santa_maria_del_fiore">Cattedrale di Santa Maria del Fiore</a></li>
+									</ul>
+								</div>
+						  	</div>
+						</div>
+						<div class="card">
+						  	<div class="card-header" id="headingThree">
+								<h2 class="mb-0">
+							  		<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Sud Italia</button>
+									</h2>
+						  	</div>
+						  	<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+								<div class="card-body">
+									<ul type ="square">
+										<li><a href = "#colosseo">Colosseo</a></li>
+										<li><a href = "#san_pietro">Basilica di San Pietro</a></li>
+										<li><a href = "#fontana_trevi">Fontana di Trevi</a></li>
+										<li><a href = "#pantheon">Pantheon</a></li>
+										<li><a href = "#bosco_capodimonte">Bosco di Capidimonte</a></li>
+									</ul>
+								</div>
+						  	</div>
+						</div>
+					</div>
 				</li>
 			</ul>
 		</div>

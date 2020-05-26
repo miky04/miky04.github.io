@@ -1,6 +1,13 @@
+.color_gallery{
+	color: black;
+}
 .images{
 	width: 300px; 
 	height: auto;
+}
+.images_g{
+	width: 815px; 
+	height: 600px;
 }
 .images_a{
 	width: 100%;
@@ -39,7 +46,10 @@ address{
 	color : #0000CD;
 }
 
-
+.gallery{
+	background-color: white;
+	image-rendering: auto;
+}  
 @media (min-width: 768px) {
 	.carousel-multi-item-2 .col-md-3 {
 	float: left;
